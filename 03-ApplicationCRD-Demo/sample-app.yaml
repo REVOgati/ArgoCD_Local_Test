@@ -2,13 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook
-  namespace: argocd
+  namespace: my-argocd-n #The resultant application resource will reside in the argocd defined namespace
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    repoURL: https://github.com/REVOgati/ArgoCD_Local_Test.git #remote repository URL where the application manifests are stored
     targetRevision: HEAD
-    path: guestbook
+    path: guestbook #The path within the repository where the application manifests are located
   destination:
-    server: https://kubernetes.default.svc
+    server: https://kubernetes.default.svc #The API server name of our kind instance; for DNS to resolve
     namespace: guestbook
