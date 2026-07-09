@@ -4,11 +4,11 @@ metadata:
   name: app1-fe-app
   namespace: myargocd-n
 spec:
-  project: app1-project
+  project: default
   source:
     repoURL: https://github.com/REVOgati/ArgoCD_Local_Test.git
     targetRevision: HEAD
-    path: frontend
+    path: 05-Projects/app1-frontend-config/frontend
   destination:
     server: https://kubernetes.default.svc
     namespace: myns-1
