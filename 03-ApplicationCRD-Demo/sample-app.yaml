@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook
-  namespace: my-argocd-n #The resultant application resource will reside in the argocd defined namespace
+  namespace: myargocd-n #The resultant application resource will reside in the argocd defined namespace
 spec:
   project: default
   source:
