@@ -1,0 +1,3 @@
+NAME                    CLUSTER                         NAMESPACE  PROJECT       STATUS   HEALTH   SYNCPOLICY  CONDITIONS        REPO                                                          PATH       TARGET
+myargocd-n/app1-fe-app  https://kubernetes.default.svc  myns-1     app1-project  Unknown  Unknown  Auto-Prune  InvalidSpecError  https://github.com/CloudWithVarJosh/app1-frontend-config.git  frontend   HEAD
+myargocd-n/guestbook    https://kubernetes.default.svc  guestbook  default       Unknown  Healthy  Manual      ComparisonError   https://github.com/REVOgati/ArgoCD_Local_Test.git             guestbook  HEAD
